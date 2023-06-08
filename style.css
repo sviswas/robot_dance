@@ -1,0 +1,268 @@
+.face{
+    height:120px;
+    width:150px;
+    background-color:green; 
+    margin:auto;
+    margin-top:5%;
+    box-shadow:0px 0px 0px 90;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    transition:width 1s linear;
+}
+.main_div:hover .face{
+    width:400px;
+    animation: moverobo 1s infinite;
+    box-shadow:0px 0px 2px 2px white;
+    
+}
+@keyframes moverobo{
+    0%{
+        width:200px;
+        background-color:white;
+    }
+    25%{
+        width:150px;
+        background-color:tomato;
+    }
+    50% {
+        width:200px;
+        background-color:yellow;
+    }
+    75% {
+        width:150px;
+        background-color:blueviolet;
+    }
+    100% {
+        width:200px;
+        background-color:lightblue;
+    }
+}
+.eyes{
+   
+    display:flex;
+    justify-content: space-around;
+}
+#leye{
+    height:15px;
+    width:15px;
+    margin-top:80px;
+    border-radius:30px;
+    background-color:black;
+}
+#reye{
+    height:15px;
+    width:15px;
+    margin-top:80px;
+    border-radius:30px;
+    background-color:black;
+}
+.robo_body{
+    height:150px;
+    width:150px;
+    background-color: green;
+    margin:auto;
+    margin-top:15px;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;  
+    transition: transform 1s ease;      
+}
+.main_div:hover .robo_body
+{
+    transform: rotate(-360deg);
+    border-radius:40%;
+  
+    animation: robo_body 1s infinite;
+}
+@keyframes robo_body {
+        0%{transform:rotate(0deg);
+            
+            background-color:green;
+            box-shadow:0px 0px 0px 0px;
+        }
+        25%{transform:rotate(360deg);
+            background-color:orange;
+            box-shadow:0px 0px 0px 2px blue;
+            
+        }
+        50%{transform:rotate(0deg);
+            box-shadow:0px 0px 0px 0px;
+            background-color:green;
+        }
+        75%{transform:rotate(-360deg);
+            box-shadow:0px 0px 0px 2px orange;
+            background-color:blue;
+        }
+        100%{transform:rotate(0deg);
+            box-shadow:0px 0px 0px 0px;
+            background-color:green;
+        }
+}
+.legs{
+   
+    display:flex;
+    justify-content: space-evenly;
+    margin-top:5%;
+}
+#leg1{
+    height:80px;
+    width:30px;
+    margin-right:-30%; 
+    border-radius:30px;
+    background-color:green;
+    transition: transform 1s ease;
+}
+.main_div:hover #leg1
+{
+    transform: translateY(-40px);
+    animation: moveleg1 1s infinite;
+}
+@keyframes moveleg1{
+    0%{transform:translateY(0px);
+        background-color:green;
+            
+    }
+    25%{transform:translateY(0px);
+        background-color:orange;
+        
+    }
+    50%{transform:translateY(0px);
+        
+        background-color:green;
+    }
+    75%{transform:translateY(-40px);
+        background-color:blue;
+    }
+    100%{transform:translateY(0px);
+        background-color:green;
+    }
+}
+
+
+#leg2{
+    height:80px;
+    width:30px;
+    border-radius:30px;
+    margin-left:-30%;
+    background-color:green;
+    transition:transform 1s ease;
+}
+.main_div:hover #leg2
+{
+    transform:translateY(-40px);
+    animation:moveleg2 1s infinite;
+}
+@keyframes moveleg2{
+    0%{transform:translateY(0px);
+        background-color:green;
+            
+    }
+    25%{transform:translateY(-40px);
+       
+        background-color:orange;
+    }
+    50%{transform:translateY(0px);
+        
+        background-color:green;
+    }
+    75%{transform:translateY(0px);
+        background-color:blue;
+    }
+    100%{transform:translateY(0px);
+        background-color:green;
+    }
+}
+.hands{
+     display:flex;
+     justify-content: space-evenly;
+     margin-top:-10%;
+         
+}
+#hand1{
+       height:80px;
+       width:30px;
+       margin-top:1%;
+       margin-left:30%;
+       border-radius:30px;
+       background-color:green;
+}
+#hand2{
+    height:80px;
+    width:30px;
+    margin-top:1%;
+    margin-right:30%;
+    border-radius:30px;
+    background-color:green;
+    transition: transform 1s ease;
+}
+.main_div:hover #hand1
+{
+    transform: rotate(-90deg);
+    transform-origin: top center;
+    
+    animation: movehand1 1s infinite;
+}
+@keyframes movehand1{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-90deg);
+        background-color:orange;
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(0deg);
+        background-color:blue;
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.main_div:hover #hand2
+{
+    transform: rotate(90deg);
+    transform-origin: top center;
+    animation: movehand2 1s infinite;
+ 
+
+}
+@keyframes movehand2{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(0deg);
+        background-color:orange;
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(90deg);
+        background-color:blue;
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+ .main_head{
+    font-weight:bold;
+    font-family:'Courier New', Courier, monospace;
+    font-size:30px;
+    letter-spacing: 0.1em;
+    color:blueviolet;
+    text-decoration: underline dotted red;
+}
+.head_div{
+    border:2px solid maroon;
+    text-align:center;
+    background-image: linear-gradient(skyblue, lightgreen);
+    box-shadow:0px 0px 0px 2px silver;
+}
+.main_div{
+    background-color:black;
+    height:80vh;
+   border:2px solid BLACK;
+}
